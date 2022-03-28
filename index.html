@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Delivery App - Download</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Food Delivery App</h1>
+            <p>
+                React-native application with Firebase for Authentication & Database
+            </p>
+            <h4>In development Phase</h4>
+            <div class="btns">
+                <a href="app-release.apk" class="download_btn" download>Download</a>
+                <span class="play_btn"><img src="assets/play.png" alt=""></span>
+            </div>
+        </div>
+        <div class="right">
+            <img id="main_img" src="assets/img.svg" alt="">
+        </div>
+    </div>
+    <div class="video_container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XvE5f3OCoak" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script>
+        let videoContainer = document.getElementsByClassName('video_container')[0]
+
+        videoContainer.addEventListener('click',()=>videoContainer.style.display = 'none')
+
+        document.getElementsByClassName('play_btn')[0].addEventListener('click',()=>{
+            videoContainer.style.display = 'flex'
+        })
+
+        
+    </script>
+</body>
+</html>
